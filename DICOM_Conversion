@@ -1,0 +1,29 @@
+#######################################################################################################
+### DICOM Manipulations - Convert DICOM so that if CT values don't allow MRI data to be represented as 3D object, get rid of offending CT values 
+
+def DICOM_Conversion(scan, outpath):
+  #Read in DICOM image
+  import pydicom as dicom
+  
+  #Specify path to DICOM slice
+  image_path = scan
+  
+  #Load in file and convert to pixel matrix
+  ds = dicom.dcmread(image_path)
+  ds = ds.pixel_array
+  
+
+  # specify your image path
+  image_path = "/Users/destierao/Documents/Patient_Data/10_Patients_Dicom_images/1-TW/SimCT/SE0/IM0"
+  ds = dicom.dcmread(image_path)
+
+  #Convert values, in this case to change CT to look like MRI for display purposes make all surrounding values equal to necessary criteria
+  ds[ds < 0] = 0
+
+  #Can also be done using:
+  #ds = np.where(ds < 0 , 0, ds)
+  
+  #Convert back to DICOM format and save
+  ds.PixelData = ds.tobytes()
+  ds.save_as(outpath)
+
