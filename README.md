@@ -11,7 +11,7 @@ See more here: https://www.sciencedirect.com/science/article/abs/pii/S1879850021
 
 Our current research is focused on anonymization methods and tools to help other practitioners address this problem. 
 
-****To cite this project or use any of the code please refer to the following publication:
+**To cite this project or use any of the code please refer to the following publication:**
 
 
 Provenzano, D., Loew, M. H., Goyal, S., & Rao, Y. J. (2022). Unmasking a Privacy Concern: Potential Identification of Patients in an Immobilization Mask from 3-Dimensional Reconstructions of Simulation Computed Tomography. In Practical Radiation Oncology (Vol. 12, Issue 2, pp. 120–124). Elsevier BV. https://doi.org/10.1016/j.prro.2021.09.006 
