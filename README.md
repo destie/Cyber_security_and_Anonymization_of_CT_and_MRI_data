@@ -11,6 +11,17 @@ See more here: https://www.sciencedirect.com/science/article/abs/pii/S1879850021
 
 Our current research is focused on anonymization methods and tools to help other practitioners address this problem. 
 
+Included code files:
+**DICOM_Conversion**
+Simple code to convert the surrounding voxels on a CT scan to mirror an MRIs so that the CT can be visualized or processed in software designed for T1W or T2W MRI.
+
+**Generate_3D_Representation_of_Face** 
+Stacks a series of DICOM files and then generates a 3D representation of the outline of person (and consequently - the face). 
+
+**3D_Reconstruction_and_Facial_Identifier**
+ Stacks a series of DICOM files,  generates a 3D representation of the outline of person (and consequently - the face), and runs a quick face recognition algorithm to see if the face is identifiable on the 3D reconstructed image. 
+
+
 **To cite this project or use any of the code please refer to the following publication:**
 
 
