@@ -1,0 +1,14 @@
+###################################################################################################################################################################
+############################################Simple face compare implementation to match faces######################################################################
+
+#Load packages
+import face_recognition
+
+#Load files using the face_recognition packages
+known_image = face_recognition.load_image_file('/.jpg')
+unknown_image = face_recognition.load_image_file('/.png')
+
+first_encoding = face_recognition.face_encodings(known_image)[0]
+second_encoding = face_recognition.face_encodings(unknown_image)[0]
+
+results = face_recognition.compare_faces([first_encoding], second_encoding)
