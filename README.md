@@ -22,6 +22,8 @@ Stacks a series of DICOM files and then generates a 3D representation of the out
 **3D_Reconstruction_and_Facial_Identifier**
  Stacks a series of DICOM files,  generates a 3D representation of the outline of person (and consequently - the face), and runs a quick face recognition algorithm to see if the face is identifiable on the 3D reconstructed image. 
 
+**Image_Matching_Methodology** 
+Identifies total number of matched points between two images using FLANN and Brute Force Matcher. 
 
 **To cite this project or use any of the code please refer to the following publication:**
 
