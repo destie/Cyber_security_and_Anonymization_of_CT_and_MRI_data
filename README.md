@@ -25,6 +25,9 @@ Stacks a series of DICOM files and then generates a 3D representation of the out
 **Image_Matching_Methodology** 
 Identifies total number of matched points between two images using FLANN and Brute Force Matcher. 
 
+**Facial_Matching_Methodology**
+Simple code to identify if two faces identified in two images match. 
+
 **To cite this project or use any of the code please refer to the following publication:**
 
 
